@@ -31,7 +31,7 @@ function CertificateCard({ image, title, year, issuer }) {
     <div className="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
       <div className="relative pt-[56.25%] w-full overflow-hidden">
         <img
-          src={`${process.env.PUBLIC_URL}/certificates/${image}`}
+          src={`/certificates/${image}`}
           alt={title}
           className="absolute inset-0 w-full h-full object-contain bg-gray-700"
           loading="lazy"

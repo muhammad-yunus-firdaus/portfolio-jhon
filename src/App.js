@@ -31,7 +31,7 @@ function CertificateCard({ image, title, year, issuer }) {
     <div className="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
       <div className="relative pt-[56.25%] w-full overflow-hidden">
         <img
-          src={`/certificates/${image}`}
+         src={`${process.env.PUBLIC_URL}/certificates/${image}`}
           alt={title}
           className="absolute inset-0 w-full h-full object-contain bg-gray-700"
           loading="lazy"
@@ -353,7 +353,7 @@ export default function App() {
           <div className="flex-1 flex justify-center relative" data-aos="fade-left" data-aos-delay="400">
             <div className="absolute w-72 h-72 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full blur-2xl opacity-80" />
             <img
-              src="/profile.jpg"
+              src={`${process.env.PUBLIC_URL}/profile.jpg`}
               alt="Profile"
               className="w-64 h-64 md:w-72 md:h-72 rounded-full object-cover border-4 border-white shadow-2xl relative z-10"
             />

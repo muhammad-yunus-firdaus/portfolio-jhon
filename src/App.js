@@ -31,7 +31,7 @@ function CertificateCard({ image, title, year, issuer }) {
     <div className="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
       <div className="relative pt-[56.25%] w-full overflow-hidden">
         <img
-          src={`/certificates/${image}`}
+          src={`${process.env.PUBLIC_URL}/certificates/${image}`}
           alt={title}
           className="absolute inset-0 w-full h-full object-contain bg-gray-700"
           loading="lazy"
@@ -209,16 +209,16 @@ export default function App() {
       image: '/images/project2.jpg',
       title: 'Aplikasi Booking Tempat Futsal',
       description: 'Aplikasi web untuk booking lapangan futsal secara online, dibangun dengan Laravel, HTML, CSS, JavaScript, dan PHP dengan database MySQL. Fitur utama mencakup pemilihan jadwal, konfirmasi booking, dan panel admin untuk pengelolaan jadwal dan pengguna.',
-      demoLink: 'https://demo-ecommerce.example.com',
-      githubLink: 'https://github.com/yourusername/ecommerce-dashboard',
+     // demoLink: 'https://demo-ecommerce.example.com',
+      githubLink: 'https://github.com/muhammad-yunus-firdaus',
       technologies: ['Html', 'CSS', 'PHP', 'Laravel', 'MySQL']
     },
     {
       image: '/images/project4.jpg',
       title: 'Manajemen Tugas',
       description: 'Website Manajemen Tugas adalah aplikasi web berbasis Django yang memungkinkan pengguna mengelola dan memantau tugas harian dengan mudah. Dibangun menggunakan HTML, CSS, dan Python dengan database SQLite.',
-      demoLink: 'https://blog.example.com',
-      githubLink: 'https://github.com/yourusername/mobile-blog',
+      // demoLink: 'https://blog.example.com',
+      githubLink: 'https://github.com/muhammad-yunus-firdaus/django-to-do-list',
       technologies: ['HTML', 'CSS', 'Python', 'Django']
     }
   ];
